@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: FLOX - Sheep Generator</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="flox.css">
+
+
+</head>
+<body>
+    <h1>FLOX - Sheep Generator</h1>
+    <main>
+
+        <div id="user-control">
+            <form id="user-form">
+
+                <div class="column" id="col1">
+                    <h2>Generate Flock</h2>
+                    <!-- Sheep Qty-->
+                    <div id="sheep-qty" class="user-input">
+                        <label for="sheep-qty-input">Quantity:</label>
+                        <input type="number" id="sheep-qty-input" min="1" max="50" value="1">
+                        <div class="info-text">Number must be between 1 and 50</div>
+                    </div>
+
+                    <!-- Sheep Weight-->
+                    <div id="sheep-weight" class="user-input">
+                        <label>Weight:</label>
+
+                        <input type="number" id="sheep-weight-min-input" min="5" max="30" value="15">
+                        <span>Min</span>
+
+                        <input type="number" id="sheep-weight-max-input" min="5" max="30" value="30">
+                        <span>Max</span>
+
+                        <div class="info-text">
+                        How fat is the flock? Choose a number between 5 and 30</div>
+                    </div>
+
+                    <!-- Sheep Speed-->
+                    <div id="sheep-speed" class="user-input">
+                        <label for="sheep-speed-input">Speed:</label>
+                        <input type="number" id="sheep-speed-input" min="1" max="5" value="1">
+                        <div class="info-text">Number must be between 1 and 5</div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div id="buttons" class="user-input">
+                        <button type="submit" id="draw-flock">Draw New Flock</button>
+                    </div>
+
+                </div>
+
+                <div class="column" id="col2">
+
+                    <h2>Miscellaneous Settings</h2>
+
+                    <!-- Mouse Position -->
+                    <div id="mouse-position" class="user-input">
+                        <label>Mouse:</label>
+
+                        <input type="text" id="mouseX-readonly" value="0" readonly>
+                        <span>X</span>
+
+                        <input type="text" id="mouseY-readonly" value="0" readonly>
+                        <span>Y</span>
+                        <div class="info-text">The mouse will show the current X & Y co-ordinates of the mouse</div>
+                    </div>
+
+
+                    <!-- Background Color -->
+                    <div id="bg-color" class="user-input">
+                        <label for="bg-color-input">BG Color:</label>
+                        <input type="color" id="bg-color-input" value="#008800">
+                        <div class="info-text">Choose a color for the background</div>
+                    </div>
+
+                    <button type="submit" id="info">Instructions</button>
+                </div>
+
+            </form>
+        </div>
+
+        <canvas id="canvas"></canvas>
+    </main>
+
+
+    <section class="instructions">
+        <h1>FLOX - Sheep Generator</h1>
+        <p>
+            Welcome to FLOX.  The purpose of this application is to generate a flock of sheep.
+            <br>Each sheep is represented by an oval.
+
+            <h3>How to Generate a Flock</h3>
+            <ol>
+                <li>Select the total amount of sheep you want from 1 - 50.</li>
+                <li>Select the weight range (size of the oval) for the sheep between 15-30.
+                    <br>Each sheep will have a weight between the min and max value.</li>
+                <li>Select the speed each sheep will move.  
+                    <br>Select a Range From 1 to 5 (1 = slow, 5 = fast)
+                </li>
+                <li>Click anywhere on the canvas (field) to add more sheep on the fly</li>
+            </ol>
+
+            <h3>Other Settings</h3>
+            <ul>
+                <li>The mouse co-ordinates (X and Y) position will be displayed in the settings</li>
+                <li>Change the background to suit for flock by selecting a new "BG Color"</li>
+            </ul>
+        </p>
+
+        <div>
+            <button id="close-info-button">Click to Close</button> 
+        </div>
+
+    </section>
+
+
+    <script src="flox.js"></script>
+</body>
+</html>

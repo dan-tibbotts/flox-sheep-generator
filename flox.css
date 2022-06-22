@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205, 233, 122);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    font-family: 'Bangers', cursive;
+    line-height: 10px;
+    font-size: 3.5em;
+    text-align: center;
+    color: rgb(19, 135, 8);
+    text-shadow: 4px 4px 20px rgb(140, 191, 146);
+}
+
+h2 {
+    font-weight: 400;
+    color: rgb(19, 135, 8);
+}
+
+h3 {
+    font-weight: bold;
+    color: rgb(19, 135, 8);
+}
+
+
+canvas {
+    border: solid 1px #2e372e7b;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+#user-control {
+    background-color: beige;
+    border: solid 1px #2e372e7b;
+    border-radius: 10px;
+
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#user-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+#col1 {
+    background-color: rgba(255, 228, 196, 0.351);
+}
+
+#col2 {
+    background-color: rgba(255, 228, 196, 0.2);
+}
+
+
+#user-control label {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100px;
+}
+
+#user-control input {
+    font-size: 1.1em;
+    border: solid 1px #2e372e7b;
+}
+
+#user-control input[type="number"], input[type="text"] {
+    padding: 3px 3px;
+    padding-left: 10px;
+    width: 50px;
+    text-align: center;
+}
+
+#user-control .info-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#user-control button, .instructions button {
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 1.0em;
+    border-radius: 5px;
+    border: solid 1px #2e372e7b;
+    background-color: rgba(140, 191, 148, 0.577);
+}
+
+#user-control button:hover {
+    background-color: rgba(140, 191, 148, 0.99);
+}
+
+#user-control #buttons {
+    margin-top: 15px;
+}
+
+#user-control .user-input {
+    padding: 5px;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    top: 20px;
+    bottom: 20px;
+
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: aliceblue;
+    padding: 20px;
+    border: solid 5px #37713754;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 40px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
